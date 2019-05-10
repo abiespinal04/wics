@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import PostList from './PostList'
+import CardC from './CardC'
+import CardSection from './CardSection'
 import './Experience.css'
 
 class Experience extends Component {
@@ -65,11 +67,12 @@ class Experience extends Component {
 
               
  
-                <div style={{textAlign:'center'}} className='textoutput'> 
-                 {this.state.data.map((data) => {
-                    return (<li>{data.post}</li> )
+                {/* <div  className="container" style={{textAlign:'center', borderWidth:2, border:true}} className='textoutput'>  */}
+                
+                {this.state.data.map((data) => {
+                    return ( <CardSection><CardC><label style={{fontWeight:'bold'}}>Name:</label><p>{data.name}</p><label  style={{fontWeight:'bold'}}>Blog:</label><p>{data.post}</p></CardC></CardSection> )
                   })}
-                </div>
+             
                 </React.Fragment>
          );
     }
