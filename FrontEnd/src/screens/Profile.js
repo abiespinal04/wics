@@ -14,7 +14,7 @@ class Profile extends Component {
                </div>
                <div>
                <p style={{fontWeight:'bold', fontFamily:'Comic Sans MS'}}>Woman in computer science stands for woman in computer science</p>
-               <p>With this website women in CS can post a comment about how they get intrested in the field,</p>
+               <p>With this website women in <p style={{fontWeight:'bold', color:'#90EE90'}}>CS</p> can post a comment about how they get involved in the field,</p>
                <p> and hopefully connect woman in the tech field.</p>
            </div>
            </React.Fragment>

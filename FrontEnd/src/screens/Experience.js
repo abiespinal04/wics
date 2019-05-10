@@ -70,7 +70,13 @@ class Experience extends Component {
                 {/* <div  className="container" style={{textAlign:'center', borderWidth:2, border:true}} className='textoutput'>  */}
                 
                 {this.state.data.map((data) => {
-                    return ( <CardSection><CardC><label style={{fontWeight:'bold'}}>Name:</label><p>{data.name}</p><label  style={{fontWeight:'bold'}}>Blog:</label><p>{data.post}</p></CardC></CardSection> )
+                    return ( <CardSection><CardC>
+                        <div style={{display:''}}>
+                        <label style={{fontWeight:'bold'}}>Name: <h5 style={{color:'#90EE90'}}>{data.name}</h5></label>
+                       
+                        </div>
+                        <label  style={{fontWeight:'bold'}}>Blog:</label>
+                        <p style={{color:'#90EE90'}}>{data.post}</p></CardC></CardSection> )
                   })}
              
                 </React.Fragment>
